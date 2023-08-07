@@ -1,0 +1,24 @@
+.Card {
+  @apply bg-[#2b2a31] pt-10 pb-8 px-8 rounded-md;
+  a & {
+    @apply pt-6 pb-2.5 px-5;
+  }
+}
+
+.SliderContainer {
+  @apply pt-16 pb-2.5 px-6;
+
+  a & {
+    @apply pt-6 pb-0 px-8;
+  }
+}
+
+.year-slider{
+  .rc-slider-mark {
+    @apply hidden;
+  } 
+}
+
+.GradientSvg {
+  @apply fixed opacity-0;
+}

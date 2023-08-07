@@ -1,0 +1,35 @@
+.CommonTab {
+  @apply w-full;
+
+  .react-tabs__tab-list, .react-tabs__tab--selected {
+    @apply border-gray-300;
+  }
+  
+  &.CommonVerticalTab {
+    @apply flex w-full h-auto border border-gray-300 rounded;
+
+    .react-tabs__tab-list {
+      @apply flex flex-col w-auto m-0 p-0 border-0;
+    }
+    
+    .react-tabs__tab {
+      @apply flex items-center w-[250px] py-4 cursor-pointer bottom-0;
+    }
+    .react-tabs__tab:focus:after {
+      @apply hidden;
+    }
+    
+    .react-tabs__tab--selected {
+      @apply pl-2 bg-gray-300 border-0 border-l-4 border-gray-300 border-l-[#6eb800] rounded-none;
+    }
+    
+    .react-tabs__tab-panel {
+      @apply hidden w-full;
+    }
+    
+    .react-tabs__tab-panel--selected {
+      @apply block border-0 border-l border-gray-300 px-20 py-10;
+    }
+
+  }
+}

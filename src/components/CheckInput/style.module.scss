@@ -1,0 +1,33 @@
+.main {
+  @apply text-sfra-gray-200 cursor-pointer pl-7 relative text-[0.8125rem]
+}
+
+.customCheckbox {
+  visibility: hidden;
+}
+
+.geekmark {
+  @apply absolute h-[18px] w-[18px] top-0 left-0 border border-[#3263c91a] rounded-[4px];
+}
+
+.geekmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.main input:checked ~ .geekmark:after {
+  display: block;
+}
+
+.main .geekmark:after {
+  left: 5px;
+  bottom: 4px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

@@ -1,0 +1,19 @@
+.text {
+  @apply font-montserrat text-sfra-gray-400 text-xs
+}
+
+.vSeperator {
+  @apply border-r mx-3 h-14 border-[#3263c933] my-auto
+}
+
+.bottomItem {
+  @apply rounded-lg border px-3 py-1 cursor-pointer
+}
+
+.bottomItem:hover {
+  @apply bg-sfra-gray-50
+}
+
+.tableColumn {
+  @apply w-52 px-4 py-1.5 text-left font-montserrat font-normal text-xs text-sfra-gray-400 whitespace-nowrap
+};

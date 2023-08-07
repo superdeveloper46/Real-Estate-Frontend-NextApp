@@ -1,0 +1,9 @@
+.radioInput {
+  input {
+    @apply appearance-none w-[18px] h-[18px] rounded-full outline-none border border-[#3263C91a];
+
+    &::before {
+      @apply block w-[10px] h-[10px] rounded-full my-[18%] mx-auto content-[''];
+    }
+  }
+}

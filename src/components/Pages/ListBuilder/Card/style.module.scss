@@ -1,0 +1,19 @@
+.text {
+  @apply font-montserrat text-sfra-gray-400 text-xs whitespace-nowrap
+}
+
+.vSeperator {
+  @apply border-r mx-3 h-4 border-[#3263c933] my-auto
+}
+
+.horizontalItem {
+  @apply flex items-center justify-between rounded-md border px-2 py-[5px] mb-2
+}
+
+.bottomItem {
+  @apply rounded-md border px-3 py-1.5 cursor-pointer flex items-center
+}
+
+.bottomItem:hover {
+  @apply bg-sfra-gray-50
+}

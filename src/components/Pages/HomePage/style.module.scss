@@ -1,0 +1,68 @@
+.categoryPanel {
+  @apply w-28 bg-[#191919] h-[calc(100vh-40px)];
+}
+
+.categoryItem {
+  @apply flex flex-col items-center px-3 py-5 space-y-2.5 text-white text-xs cursor-pointer relative;
+}
+
+.pulseItem {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  top: 10px;
+  text-align: center;
+  box-shadow: 0 0 0 0 #3263C988;
+  background-color: #263C6B66;
+  -webkit-animation: pulsing 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulsing 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulsing 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulsing 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+.comingSoonTag {
+  display: none;
+  margin-left: 8px;
+  padding: 2px 8px;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #ff9800;
+  border-radius: 12px;
+}
+
+.activeItem {
+  color: #007BFF;  // Change this to your desired blue color
+}
+.activeIcon {
+  fill: #007BFF;  // Change this to your desired blue color
+}
+
+
+.categoryItem:hover .comingSoonTag {
+  display: inline-block;
+}
+
+@-webkit-keyframes pulsing {
+  to {
+    box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+  }
+}
+
+@-moz-keyframes pulsing {
+  to {
+    box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+  }
+}
+
+@-ms-keyframes pulsing {
+  to {
+    box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+  }
+}
+
+@keyframes pulsing {
+  to {
+    box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+  }
+}

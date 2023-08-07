@@ -1,0 +1,27 @@
+.textLg {
+  @apply font-montserrat text-ms text-sfra-gray-300 font-normal;
+}
+
+.textSm {
+  @apply font-montserrat text-xs text-sfra-gray-200 font-normal pb-[2px];
+}
+
+.hSeperator {
+  @apply my-5 border-b
+}
+
+.priceInput {
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input{
+    @apply w-24 rounded-lg border-2 border-sfra-gray-50 py-1 text-center font-montserrat text-xs font-medium text-sfra-gray-300 outline-none
+  }
+}
+
+.textInput {
+  @apply w-full rounded-lg border-2 border-sfra-gray-50 py-1.5 px-1.5 text-left font-montserrat text-xs font-medium text-sfra-gray-300 outline-none
+}
